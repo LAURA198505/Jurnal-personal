@@ -2,9 +2,9 @@
 
 ## Descriere
 
-Frontend-ul aplicației Jurnal Personal reprezintă interfața prin care utilizatorul poate crea și gestiona însemnări într-un jurnal digital. Aplicația comunică cu backend-ul prin cereri HTTP către un API REST.
+Frontend-ul aplicației Jurnal Personal reprezintă interfața prin care utilizatorul poate crea, vizualiza și gestiona însemnări într-un jurnal digital. Aplicația comunică cu backend-ul prin cereri HTTP către un API REST.
 
-În această versiune, frontend-ul afișează exclusiv datele introduse de utilizator și nu utilizează servicii externe sau surse de date suplimentare.
+Interfața permite introducerea și afișarea însemnărilor într-un mod simplu și intuitiv.
 
 ---
 
@@ -29,15 +29,18 @@ Frontend-ul aplicației Jurnal Personal reprezintă interfața prin care utiliza
 ## Pornirea aplicației
 
 1. Instalează dependențele:
-```bash
+
 npm install
+
 2. Pornește aplicația:
-```bash
+
 npm start
+
+
 Aplicația va rula implicit la adresa:
 
-arduino
-Copy code
 http://localhost:3000
+
 Observație
-Frontend-ul este realizat în scop educațional și poate fi extins ulterior cu funcționalități suplimentare.
+
+Frontend-ul este realizat în scop educațional și respectă principiile de bază ale unei aplicații web de tip client–server.
