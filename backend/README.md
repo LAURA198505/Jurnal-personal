@@ -30,20 +30,15 @@ Backend-ul aplicației Jurnal Personal este realizat folosind Node.js și Expres
 1. Instalează dependențele:
 ```bash
 npm install
-## Pornirea serverului
+Pornește serverul:
 
-1. Instalează dependențele:
-npm install
-
-2. Pornește serverul:
 node app.js
 
+
 Serverul va rula implicit pe:
+
 http://localhost:3000
 
----
-
-## Observație
+Observație
 
 Backend-ul este conceput pentru scopuri educaționale și poate fi extins ulterior cu funcționalități suplimentare, precum autentificare sau integrare cu servicii externe.
-
