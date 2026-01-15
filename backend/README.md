@@ -1,16 +1,32 @@
-# Backend – Personal Journal API
+# Backend – Jurnal Personal
 
-## Description
-REST API built with Node.js, Express and Sequelize for a Personal Journal application.
+## Descriere
 
-## Routes
+Backend-ul aplicației Jurnal Personal este realizat folosind Node.js și Express.js și are rolul de a gestiona logica aplicației, rutele API și persistența datelor.
 
-- GET /journal – list all entries
-- POST /journal – create entry
-- DELETE /journal/:id – delete entry
+În această versiune, backend-ul gestionează exclusiv datele textuale ale însemnărilor (titlu și conținut). Nu există integrare cu servicii externe și nu sunt utilizate API-uri de tip meteo sau alte surse externe de date.
 
-## Run backend
+---
 
+## Funcționalități
+
+- expune un API REST pentru gestionarea însemnărilor;
+- permite crearea, citirea și ștergerea însemnărilor;
+- salvează datele într-o bază de date SQLite folosind Sequelize ORM.
+
+---
+
+## Tehnologii utilizate
+
+- Node.js
+- Express.js
+- Sequelize
+- SQLite
+
+---
+
+## Pornirea serverului
+
+1. Instalează dependențele:
 ```bash
 npm install
-node app.js
