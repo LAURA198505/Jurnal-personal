@@ -10,6 +10,9 @@ const JournalEntry = sequelize.define("JournalEntry", {
     type: DataTypes.TEXT,
     allowNull: false,
   },
+  mood: {
+    type: DataTypes.STRING,
+  },
 });
 
 module.exports = JournalEntry;
