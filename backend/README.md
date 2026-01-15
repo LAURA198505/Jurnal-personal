@@ -2,9 +2,9 @@
 
 ## Descriere
 
-Backend-ul aplicației Jurnal Personal este realizat folosind Node.js și Express.js și are rolul de a gestiona logica aplicației, rutele API și persistența datelor.
+Backend-ul aplicației Jurnal Personal este realizat folosind Node.js și Express.js și are rolul de a gestiona logica aplicației, rutele API și persistența datelor pentru însemnările din jurnal.
 
-În această versiune, backend-ul gestionează exclusiv datele textuale ale însemnărilor (titlu și conținut). Nu există integrare cu servicii externe și nu sunt utilizate API-uri de tip meteo sau alte surse externe de date.
+Aplicația gestionează datele introduse de utilizator, respectiv titlul și conținutul fiecărei însemnări, care sunt stocate într-o bază de date relațională.
 
 ---
 
@@ -12,7 +12,7 @@ Backend-ul aplicației Jurnal Personal este realizat folosind Node.js și Expres
 
 - expune un API REST pentru gestionarea însemnărilor;
 - permite crearea, citirea și ștergerea însemnărilor;
-- salvează datele într-o bază de date SQLite folosind Sequelize ORM.
+- realizează persistența datelor folosind Sequelize ORM și SQLite.
 
 ---
 
@@ -20,7 +20,7 @@ Backend-ul aplicației Jurnal Personal este realizat folosind Node.js și Expres
 
 - Node.js
 - Express.js
-- Sequelize
+- Sequelize ORM
 - SQLite
 
 ---
@@ -28,17 +28,15 @@ Backend-ul aplicației Jurnal Personal este realizat folosind Node.js și Expres
 ## Pornirea serverului
 
 1. Instalează dependențele:
-```bash
 npm install
-Pornește serverul:
 
+2. Pornește serverul:
 node app.js
 
-
-Serverul va rula implicit pe:
+Serverul va rula implicit la adresa:
 
 http://localhost:3000
 
 Observație
 
-Backend-ul este conceput pentru scopuri educaționale și poate fi extins ulterior cu funcționalități suplimentare, precum autentificare sau integrare cu servicii externe.
+Backend-ul este realizat în scop educațional și respectă principiile de bază ale unei arhitecturi client–server.
