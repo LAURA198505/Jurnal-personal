@@ -31,3 +31,13 @@ Frontend-ul aplicației Jurnal Personal reprezintă interfața prin care utiliza
 1. Instalează dependențele:
 ```bash
 npm install
+2. Pornește aplicația:
+```bash
+npm start
+Aplicația va rula implicit la adresa:
+
+arduino
+Copy code
+http://localhost:3000
+Observație
+Frontend-ul este realizat în scop educațional și poate fi extins ulterior cu funcționalități suplimentare.
