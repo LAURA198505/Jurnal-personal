@@ -1,84 +1,39 @@
 Proiect realizat în cadrul disciplinei **Tehnologii Web**  
 
----
+# Jurnal Personal – Aplicație Web
 
-## 1. Descriere generală
+## Descriere generală
 
-**Personal Journal Web App** este o aplicație web de tip **Single Page Application (SPA)** care permite utilizatorului să își gestioneze un jurnal personal zilnic. Utilizatorul poate adăuga, vizualiza și șterge însemnări din jurnal, fiecare însemnare fiind asociată automat cu condițiile meteo din momentul creării acesteia.
+Jurnal Personal este o aplicație web care permite utilizatorului să creeze, să vizualizeze și să gestioneze însemnări personale sub forma unui jurnal digital. Aplicația este concepută ca un proiect educațional pentru disciplina Tehnologii Web și urmărește utilizarea unei arhitecturi moderne de tip client–server.
 
-Aplicația are rolul de a demonstra utilizarea principalelor tehnologii studiate în cadrul disciplinei, respectând cerințele impuse privind arhitectura, persistența datelor și integrarea unui serviciu extern.
-
----
-
-## 2. Obiectivul proiectului
-
-Obiectivul principal al proiectului este dezvoltarea unei aplicații web complete care să utilizeze:
-- un **frontend bazat pe componente**,
-- un **backend RESTful**,
-- o **bază de date relațională accesată prin ORM**,
-- un **serviciu extern (API public)**.
+În versiunea actuală, fiecare însemnare conține exclusiv informații introduse de utilizator (titlu și conținut). Aplicația nu include integrarea cu servicii externe și nu asociază date suplimentare precum condiții meteo sau locație.
 
 ---
 
-## 3. Funcționalități
+## Funcționalități principale
 
-- adăugarea unei însemnări în jurnal
-- vizualizarea listei de însemnări
-- ștergerea unei însemnări
-- asocierea automată a informațiilor meteo pentru fiecare însemnare
+- adăugarea unei noi însemnări în jurnal;
+- afișarea listei de însemnări existente;
+- ștergerea unei însemnări;
+- comunicare între frontend și backend prin API REST;
+- persistența datelor într-o bază de date.
 
 ---
 
-## 4. Tehnologii utilizate
-
-### Frontend
-- React.js
-- HTML5, CSS
-- Fetch API
+## Tehnologii utilizate
 
 ### Backend
 - Node.js
 - Express.js
-
-### Persistență
-- SQLite
 - Sequelize ORM
+- SQLite
 
-### Serviciu extern
-- OpenWeatherMap API
-
-### Alte tehnologii
-- Git & GitHub
-- Platforme de deploy (Render / Railway)
-
----
-
-## 5. Arhitectura aplicației
-
-Aplicația este organizată conform arhitecturii **client–server**:
-- Frontend-ul rulează în browser și comunică cu backend-ul prin HTTP
-- Backend-ul gestionează logica aplicației, persistența datelor și interogarea serviciului extern
-- Datele sunt stocate într-o bază de date relațională
+### Frontend
+- HTML
+- CSS
+- JavaScript
 
 ---
 
-## 6. Structura proiectului
+## Structura proiectului
 
-```text
-personal-journal/
-├── backend/
-│   ├── models/
-│   ├── routes/
-│   ├── controllers/
-│   ├── app.js
-│   └── README.md
-│
-├── frontend/
-│   ├── src/
-│   ├── public/
-│   └── README.md
-│
-├── docs/
-│   └── specificatii-proiect.md
-│
-└── README.md
